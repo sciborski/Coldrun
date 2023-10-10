@@ -3,5 +3,11 @@
     "cypress": "^13.3.0",
     "nanoid": "^5.0.1",
     "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "run:all": "npx cypress run",
+    "run:post": "npx cypress run --spec 'cypress/e2e/trucks/CreateTrucks.cy.ts'",
+    "run:put": "npx cypress run --spec 'cypress/e2e/trucks/EditTrucks.cy.ts'",
+    "run:get": "npx cypress run --spec 'cypress/e2e/trucks/GetTrucks.cy.ts'"
   }
 }
